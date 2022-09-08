@@ -1,0 +1,39 @@
+.form {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 5%;
+    background-color: #ececf1;
+    border-radius: 5%;
+}
+
+input {
+
+    width:50%;
+    height: 25%;
+    border-top: solid black .25em;
+    border-right: solid #1e1d1d .1em;
+    border-left: solid #1e1d1d 0.1em;
+    border-bottom: none;
+    border-radius: 1em;
+    padding: 2% 5% 2% 5%;
+    text-align: center;
+    background-color: #93f1b9;
+    color: #636367;
+}
+
+::-webkit-input-placeholder {
+    text-align: right;
+}
+
+:-moz-placeholder {
+    text-align: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,39 @@
+.container {
+    height: 600px;
+    width: 500px;
+    display: grid;
+    padding: 5%;
+    grid-template-rows: 1fr 5fr;
+    background-color: whitesmoke;
+    border: solid #131111 20px;
+    border-radius: 50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgba(79, 129, 99, 0.49);
+    font-style: italic;
+    font-size: 5em;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    text-align: end;
+}
+
+.go-to-recipe-button {
+    width: 25%;
+    align-self: center;
+    background-color: #568f6d;
+    transition: transform .2s ease-in-out;
+}
+
+.go-to-recipe-button:hover {
+    transform: scale(1.25);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
