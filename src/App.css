@@ -2,9 +2,8 @@ body, html {
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  align-self: center;
   justify-content: center;
-  align-items: center;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,12 +11,14 @@ body, html {
 }
 
 .container {
-  height: 600px;
-  width: 500px;
   display: grid;
   grid-template-rows: 3fr 1fr 3fr;
   background-color: whitesmoke;
   border: solid #131111 20px;
   border-radius: 50px;
+}
+
+#root {
+  justify-content: center;
 }
 
