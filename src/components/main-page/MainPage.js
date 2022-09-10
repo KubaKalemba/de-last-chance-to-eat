@@ -2,15 +2,15 @@ import React from 'react';
 import './MainPage.css'
 import PageHeader from "./PageHeader";
 import PageFooter from "./PageFooter";
+import Menu from "../menu/Menu";
+
 
 function MainPage(props) {
     return (
         <div className='main-page'>
             <PageHeader />
-            <div className='main-content'>
-                <button>new ingredient</button>
-                <button>new recipe</button>
-            </div>
+            <Menu/>
+
             <PageFooter />
         </div>
     );

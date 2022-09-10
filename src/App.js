@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import NewIngredient from "./components/new-ingredient/NewIngredient";
 import MainPage from "./components/main-page/MainPage";
+import {Route, Routes} from "react-router-dom";
+import React from "react";
 
 function App() {
-  return (
-      <MainPage />
-  );
+    return (
+        <React.Fragment>
+            <Routes>
+                <Route path="/ingredients"/>
+                <Route path="/recipes"/>
+            </Routes>
+            <MainPage/>
+        </React.Fragment>
+    );
 }
 
 export default App;
