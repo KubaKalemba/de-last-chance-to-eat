@@ -15,7 +15,7 @@ function MenuItem(props) {
 
             <Link style={linkStyle} to={props.path} className={'menu-item'} onClick={() => {
                 props.hideMenu()
-            }}>{props.name}</Link>
+            }}>{props.icon}{props.name}</Link>
     );
 }
 
