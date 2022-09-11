@@ -17,13 +17,14 @@ function MainPage(props) {
     return (
         <div className='main-page'>
             <PageHeader handleToggle={openMenu} />
-            <Routes>
-                <Route path={"/"} element={<Menu/>}/>
-                <Route path="/ingredients" element={<Ingredients/>}/>
-                <Route path="/recipes"/>
-            </Routes>
+
             <div className='main-content'>
                 { isMenuOpen && <Menu /> }
+                <Routes>
+                    <Route path={"/"} element={<Menu/>}/>
+                    <Route path="/ingredients" element={<Ingredients/>}/>
+                    <Route path="/recipes"/>
+                </Routes>
             </div>
 
 

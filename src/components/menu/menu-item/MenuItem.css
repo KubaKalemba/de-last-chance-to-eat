@@ -1,5 +1,6 @@
 .menu-item {
     display: flex;
+    flex-direction: column;
     width: 25vh;
     height: 25vh;
     align-self: center;

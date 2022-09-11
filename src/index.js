@@ -9,7 +9,7 @@ import { ApolloProvider, ApolloClient, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
     uri: "https://rs-food-craft.herokuapp.com/graphql",
-    cache: new InMemoryCache()
+    cache: new InMemoryCache(),
 });
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

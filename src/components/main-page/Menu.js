@@ -1,6 +1,7 @@
 import React from 'react';
 import {Route, Routes} from "react-router-dom";
 import Ingredients from "../ingredients/Ingredients";
+import {HiOutlineHome} from "react-icons/hi";
 
 function Menu(props) {
     return (
