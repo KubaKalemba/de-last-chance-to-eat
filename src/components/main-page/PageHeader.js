@@ -6,7 +6,7 @@ function PageHeader(props) {
     return (
         <div className='header'>
                 <h1>FOODCRAFT</h1>
-                <Hamburger />
+                <Hamburger hideOutline={true}/>
         </div>
     );
 }

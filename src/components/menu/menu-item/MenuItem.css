@@ -1,11 +1,20 @@
-.menu-items > button {
-    width: 50vh;
-    height: 10vh;
+.menu-item {
+    display: flex;
+    width: 25vh;
+    height: 25vh;
     align-self: center;
     background-color: #568f6d;
     color: white;
-    border: none;
+    border: #84b698 5px solid;
     border-radius: 50px;
-    margin-bottom: 5%;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item:hover {
+    width: 27vh;
+    height: 27vh;
+    transition-delay: 0.3s;
 }
 

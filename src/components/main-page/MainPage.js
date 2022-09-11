@@ -1,17 +1,33 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './MainPage.css'
 import PageHeader from "./PageHeader";
 import PageFooter from "./PageFooter";
 import Menu from "../menu/Menu";
+import {Route, Routes} from "react-router-dom";
+import Ingredients from "../ingredients/Ingredients";
 
 
 function MainPage(props) {
+
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+    const openMenu = () => {
+        setIsMenuOpen(!isMenuOpen)
+    }
+
     return (
         <div className='main-page'>
-            <PageHeader />
-            <Menu/>
+            <PageHeader/>
+            {isMenuOpen ? <Menu/> : null}
+            <Routes>
+                <Route path={"/"} element={<Menu/>}/>
+                <Route path="/ingredients" element={<Ingredients/>}/>
+                <Route path="/recipes"/>
+            </Routes>
 
-            <PageFooter />
+
+
+            <PageFooter/>
         </div>
     );
 }

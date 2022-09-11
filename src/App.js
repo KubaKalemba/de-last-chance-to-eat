@@ -2,16 +2,11 @@ import './App.css';
 import MainPage from "./components/main-page/MainPage";
 import {Route, Routes} from "react-router-dom";
 import React from "react";
+import Ingredients from "./components/ingredients/Ingredients";
 
 function App() {
     return (
-        <React.Fragment>
-            <Routes>
-                <Route path="/ingredients"/>
-                <Route path="/recipes"/>
-            </Routes>
             <MainPage/>
-        </React.Fragment>
     );
 }
 
