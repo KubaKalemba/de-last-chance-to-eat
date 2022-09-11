@@ -33,11 +33,13 @@
     align-items: center;
     justify-content: space-between;
     background-color: ghostwhite;
+    color: rgba(86, 143, 109, 0.72);
 }
 
 .header > h1 {
     font-weight: bolder;
     font-size: 2rem;
+    font-style: italic;
     letter-spacing: .1vm;
     margin-left: 5%;
 }
