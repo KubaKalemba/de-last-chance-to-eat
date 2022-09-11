@@ -8,7 +8,7 @@ import Ingredients from "../ingredients/Ingredients";
 
 function MainPage(props) {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(true)
+    const [isMenuOpen, setIsMenuOpen] = useState(false)
 
     const openMenu = () => {
         setIsMenuOpen(!isMenuOpen)
