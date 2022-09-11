@@ -1,6 +1,7 @@
 import React from 'react';
 import './Recipes.css'
 import {gql, useQuery} from "@apollo/client";
+import {Link} from "react-router-dom";
 
 function Recipes(props) {
 
@@ -26,6 +27,14 @@ function Recipes(props) {
                     </div>
                 ))
             }
+            <div className='recipes-footer'>
+                <Link
+                    to={'/new-ingredient'}
+                    className='new-ingredient-link'
+                    >
+                    NEW RECIPE
+                </Link>
+            </div>
         </div>
     );
 }

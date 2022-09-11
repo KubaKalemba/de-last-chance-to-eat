@@ -31,14 +31,17 @@
     }
 }
 
-.go-to-recipe-button {
+.footer > button {
     width: 25%;
+    height: 50%;
     align-self: center;
-    background-color: #568f6d;
+    background-color: #93f1b9;
+    border-radius: 25em;
+    border: none;
     transition: transform .2s ease-in-out;
 }
 
-.go-to-recipe-button:hover {
+.footer > button:hover {
     transform: scale(1.25);
 }
 

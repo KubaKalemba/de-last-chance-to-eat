@@ -16,10 +16,7 @@ export default function NewIngredient() {
             </div>
             <NewIngForm />
             <div className='footer'>
-                <button
-                    className='go-to-recipe-button'
-                    onClick={fetch}
-                />
+                <button/>
             </div>
         </div>
     )

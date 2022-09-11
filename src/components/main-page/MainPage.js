@@ -27,6 +27,7 @@ function MainPage(props) {
                         <Route path={"/"} element={<HomePage />}/>
                         <Route path="/ingredients" element={<Ingredients/>}/>
                         <Route path="/recipes" element={<Recipes/>}/>
+                        <Route path="/new-ingredient" element={<NewIngredient />} />
                     </Routes>
                 }
             </div>

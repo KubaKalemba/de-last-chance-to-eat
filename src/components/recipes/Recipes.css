@@ -10,9 +10,35 @@
 }
 
 .recipe {
-    background-color: #c6eed6;
+    background-color: #aaeac4;
     width: 100%;
     height: 10%;
     margin-bottom: 1.25%;
+}
 
+.recipes-footer {
+    height: 10%;
+    width: 100%;
+    margin-top: 10%;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-ingredient-link {
+    width: 20%;
+    height: 50%;
+    background-color: #aaeac4;
+    color: #568f6d;
+    border: none;
+    border-radius: 25em;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
