@@ -1,12 +1,15 @@
 import React from 'react';
 
+
+function fetch() {
+
+}
+
+
 function Ingredients(props) {
-
-
-
     return (
-        <div className={"ingredients"}>
-            HERE TO BE INGREDIENTS FETCHED FROM THE API
+        <div>
+
         </div>
     );
 }

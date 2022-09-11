@@ -1,12 +1,13 @@
 import React from 'react';
 import './MainPage.css'
 import Hamburger from 'hamburger-react'
+import {openMenu} from "./MainPage";
 
 function PageHeader(props) {
     return (
         <div className='header'>
                 <h1>FOODCRAFT</h1>
-                <Hamburger hideOutline={true}/>
+                <Hamburger hideOutline={true} onToggle={() => {props.handleToggle()}} duration={.5}/>
         </div>
     );
 }

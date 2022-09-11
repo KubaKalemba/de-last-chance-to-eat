@@ -6,10 +6,9 @@ import Menu from "../menu/Menu";
 import {Route, Routes} from "react-router-dom";
 import Ingredients from "../ingredients/Ingredients";
 
-
 function MainPage(props) {
 
-    const [isMenuOpen, setIsMenuOpen] = useState(false)
+    const [isMenuOpen, setIsMenuOpen] = useState(true)
 
     const openMenu = () => {
         setIsMenuOpen(!isMenuOpen)
@@ -17,13 +16,10 @@ function MainPage(props) {
 
     return (
         <div className='main-page'>
-            <PageHeader/>
-            {isMenuOpen ? <Menu/> : null}
-            <Routes>
-                <Route path={"/"} element={<Menu/>}/>
-                <Route path="/ingredients" element={<Ingredients/>}/>
-                <Route path="/recipes"/>
-            </Routes>
+            <PageHeader handleToggle={openMenu} />
+            <div className='main-content'>
+                { isMenuOpen && <Menu /> }
+            </div>
 
 
 

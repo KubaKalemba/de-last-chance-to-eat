@@ -1,6 +1,6 @@
 .main-page {
     width: 100%;
-    height: 80%;
+    height: 100%;
     flex-direction: column;
     flex: 1 1 auto;
 }
@@ -16,11 +16,15 @@
 
 .header {
     top: 0;
-    position: sticky;
+}
+
+.footer {
+    bottom: 0;
 }
 
 
 .header, .footer {
+    position: sticky;
     width: 100%;
     height: 12.5%;
     flex-grow: 0;
