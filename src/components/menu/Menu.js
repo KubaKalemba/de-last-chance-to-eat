@@ -1,6 +1,9 @@
 import React from 'react';
 import "./Menu.css"
 import MenuItem from "./menu-item/MenuItem";
+import {GiFruitBowl} from "react-icons/gi";
+import {BsBook} from "react-icons/bs";
+import {HiOutlineHome} from "react-icons/hi";
 
 function Menu(props) {
     return (
