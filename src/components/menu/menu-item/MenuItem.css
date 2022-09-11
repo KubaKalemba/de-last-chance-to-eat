@@ -10,11 +10,10 @@
     margin: 2vh;
     justify-content: center;
     align-items: center;
+    transition: transform ease-in-out .2s;
 }
 
 .menu-item:hover {
-    width: 27vh;
-    height: 27vh;
-    transition-delay: 0.3s;
+    transform: scale(1.22);
 }
 

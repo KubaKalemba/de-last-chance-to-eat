@@ -5,6 +5,8 @@ import PageFooter from "./PageFooter";
 import Menu from "../menu/Menu";
 import {Route, Routes} from "react-router-dom";
 import Ingredients from "../ingredients/Ingredients";
+import Recipes from "../recipes/Recipes";
+import HomePage from "../homepage/HomePage";
 
 function MainPage(props) {
 
@@ -16,16 +18,16 @@ function MainPage(props) {
 
     return (
         <div className='main-page'>
-            <PageHeader handleToggle={openMenu} />
-            <Routes>
-                <Route path={"/"} element={<Menu/>}/>
-                <Route path="/ingredients" element={<Ingredients/>}/>
-                <Route path="/recipes"/>
-            </Routes>
+            <PageHeader handleToggle={openMenu}/>
             <div className='main-content'>
-                { isMenuOpen && <Menu /> }
+                { isMenuOpen ? <Menu hideMenu={openMenu}/> :
+                    <Routes>
+                        <Route path={"/"} element={<HomePage />}/>
+                        <Route path="/ingredients" element={<Ingredients/>}/>
+                        <Route path="/recipes" element={<Recipes/>}/>
+                    </Routes>
+                }
             </div>
-
 
 
             <PageFooter/>

@@ -12,9 +12,10 @@ const linkStyle = {
 
 function MenuItem(props) {
     return (
-        <div className={"menu-item"}>
-            <Link style={linkStyle} to={props.path}>{props.name}</Link>
-        </div>
+
+            <Link style={linkStyle} to={props.path} className={'menu-item'} onClick={() => {
+                props.hideMenu()
+            }}>{props.name}</Link>
     );
 }
 
