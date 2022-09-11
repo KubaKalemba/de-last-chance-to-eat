@@ -1,0 +1,20 @@
+.menu-item {
+    display: flex;
+    width: 25vh;
+    height: 25vh;
+    align-self: center;
+    background-color: #568f6d;
+    color: white;
+    border: #84b698 5px solid;
+    border-radius: 50px;
+    margin: 2vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item:hover {
+    width: 27vh;
+    height: 27vh;
+    transition-delay: 0.3s;
+}
+

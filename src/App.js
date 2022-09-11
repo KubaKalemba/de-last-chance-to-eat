@@ -1,12 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
-import NewIngredient from "./components/new-ingredient/NewIngredient";
 import MainPage from "./components/main-page/MainPage";
+import {Route, Routes} from "react-router-dom";
+import React from "react";
+import Ingredients from "./components/ingredients/Ingredients";
 
 function App() {
-  return (
-      <MainPage />
-  );
+    return (
+            <MainPage />
+    );
 }
 
 export default App;
