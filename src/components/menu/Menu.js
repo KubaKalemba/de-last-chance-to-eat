@@ -13,6 +13,7 @@ function Menu(props) {
                     path={"/"}
                     icon=<HiOutlineHome size={75}/>
                     hideMenu={props.hideMenu}
+
                 />
                 <MenuItem
                     name={"ingredients"}
