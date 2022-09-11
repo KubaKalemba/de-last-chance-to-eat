@@ -19,7 +19,7 @@ function MainPage(props) {
 
     return (
         <div className='main-page'>
-            <PageHeader handleToggle={openMenu}/>
+            <PageHeader handleToggle={openMenu} isMenuOpen={isMenuOpen}/>
             <div className='main-content'>
                 {
                     isMenuOpen ? <Menu hideMenu={openMenu}/> :
