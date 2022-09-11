@@ -7,6 +7,7 @@ import {Route, Routes} from "react-router-dom";
 import Ingredients from "../ingredients/Ingredients";
 import Recipes from "../recipes/Recipes";
 import HomePage from "../homepage/HomePage";
+import NewIngredient from "../new-ingredient/NewIngredient";
 
 function MainPage(props) {
 
@@ -20,7 +21,8 @@ function MainPage(props) {
         <div className='main-page'>
             <PageHeader handleToggle={openMenu}/>
             <div className='main-content'>
-                { isMenuOpen ? <Menu hideMenu={openMenu}/> :
+                {
+                    isMenuOpen ? <Menu hideMenu={openMenu}/> :
                     <Routes>
                         <Route path={"/"} element={<HomePage />}/>
                         <Route path="/ingredients" element={<Ingredients/>}/>

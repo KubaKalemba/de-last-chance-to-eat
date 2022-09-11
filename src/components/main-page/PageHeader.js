@@ -5,7 +5,7 @@ import {openMenu} from "./MainPage";
 
 function PageHeader(props) {
     return (
-        <div className='header'>
+        <div className='page-header'>
                 <h1>FOODCRAFT</h1>
                 <Hamburger hideOutline={true} onToggle={() => {props.handleToggle()}} duration={.5}/>
         </div>
