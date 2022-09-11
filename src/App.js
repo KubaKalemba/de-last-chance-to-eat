@@ -6,7 +6,7 @@ import Ingredients from "./components/ingredients/Ingredients";
 
 function App() {
     return (
-            <MainPage/>
+            <MainPage />
     );
 }
 
