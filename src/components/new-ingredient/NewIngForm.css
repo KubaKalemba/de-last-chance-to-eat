@@ -1,10 +1,12 @@
 .form {
+    width: 100%;
+    height: 25%;
     margin-top: 5%;
     margin-bottom: 5%;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     background-color: #ececf1;
     border-radius: 5%;
 }
@@ -33,7 +35,8 @@ input {
 }
 
 .input-container {
+    width: 1fr;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }

@@ -14,7 +14,7 @@
     background-color: #93F1B9FF;
 }
 
-.header {
+.page-header {
     top: 0;
 }
 
@@ -23,7 +23,7 @@
 }
 
 
-.header, .footer {
+.page-header, .footer {
     position: sticky;
     width: 100%;
     height: 12.5%;
@@ -31,12 +31,12 @@
     border: #ececf1 2px solid;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: ghostwhite;
-    color: rgba(86, 143, 109, 0.72);
+    color: rgba(79, 129, 99, 0.49);
 }
 
-.header > h1 {
+.page-header > h1 {
     font-weight: bolder;
     font-size: 2rem;
     font-style: italic;
@@ -44,7 +44,7 @@
     margin-left: 5%;
 }
 
-.header > div {
+.page-header > div {
     margin-right: 5%;
 }
 
