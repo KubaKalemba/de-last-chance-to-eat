@@ -2,6 +2,7 @@ import React from 'react';
 import './MenuItem.css'
 import {Link} from "react-router-dom";
 
+
 const linkStyle = {
     margin: "1rem",
     textDecoration: "none",
@@ -11,10 +12,10 @@ const linkStyle = {
 
 function MenuItem(props) {
     return (
-        <div className={"menu-item"}>
-            {props.icon}
-            <Link style={linkStyle} to={props.path}>{props.name.toString().toUpperCase()}</Link>
-        </div>
+
+            <Link style={linkStyle} to={props.path} className={'menu-item'} onClick={() => {
+                props.hideMenu()
+            }}>{props.name}</Link>
     );
 }
 
