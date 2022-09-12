@@ -43,6 +43,10 @@ option {
     text-decoration: none;
 }
 
+.new-ing-link:hover {
+    background-color: #77c094;
+}
+
 .new-ing-input {
     width: 50%;
     height: 50%;
