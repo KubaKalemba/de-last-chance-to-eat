@@ -13,8 +13,14 @@ export default function NewIngForm() {
         'fat',
         'carbohydrates',
         'calories',
-        'gowna'
+        'duken przelewaj dolary'
     ]
+
+    const sendData = () => {
+        for (let input of inputs) {
+            console.log(input.innerHTML)
+        }
+    }
 
     const inputs = items.map(item => {
         return (
@@ -26,7 +32,12 @@ export default function NewIngForm() {
 
     return (
         <div className='form'>
-            {inputs}
+            <div className='inputs'>
+                {inputs}
+            </div>
+            <div className='button-container'>
+            <button className='new-ing-form-button' onClick={sendData} />
+            </div>
         </div>
     );
 }

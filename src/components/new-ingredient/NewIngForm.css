@@ -1,20 +1,28 @@
 .form {
     width: 100%;
-    height: 25%;
+    height: 50%;
     margin-top: 5%;
     margin-bottom: 5%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #ececf1;
-    border-radius: 5%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    background-color: #f1f8ea;
 }
 
-input {
+.inputs {
+    width: 100%;
+    height: 25%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #f1f8ea;
+}
+
+.input {
 
     width:50%;
     height: 25%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     border-top: solid black .25em;
     border-right: solid #1e1d1d .1em;
     border-left: solid #1e1d1d 0.1em;
@@ -23,7 +31,7 @@ input {
     padding: 2% 5% 2% 5%;
     text-align: center;
     background-color: #93f1b9;
-    color: #636367;
+    color: #090909;
 }
 
 ::-webkit-input-placeholder {
@@ -39,4 +47,26 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.button-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-ing-form-button {
+    width: 20%;
+    height: 25%;
+    background-color: #93f1b9;
+    border: solid black 1em;
+    border-radius: 25em;
+    transition: transform .2s ease-in-out;
+}
+
+.new-ing-form-button:hover {
+    background-color: #93f1b9;
+    transform: scale(1.2);
 }

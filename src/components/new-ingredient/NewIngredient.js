@@ -7,6 +7,11 @@ export default function NewIngredient() {
     const fetch = () => {
 
 
+
+    }
+
+    const receiveIngredients = () => {
+
     }
 
     return (
